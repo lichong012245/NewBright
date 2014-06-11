@@ -1,0 +1,16 @@
+*.db
+lfs.log
+local_settings.py
+.installed.cfg
+*.pyc
+*.pyo
+*.DS_Store
+*develop-eggs/
+*.egg-info/
+*eggs/
+*parts/
+*bin/
+*downloads/
+*sitestatic/
+*media/
+*build/

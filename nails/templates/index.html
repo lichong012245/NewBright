@@ -1,0 +1,136 @@
+{% load staticfiles %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>New Bright Nails got my nails done right! Address: 1519 Black Rock Tpke, Fairfield CT. Phone: (203) 330-8888</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}" media="screen" />
+	<script language="javascript" src="{% static "scripts/browserdetect_lite.js" %}" type="text/javascript"></script>
+	<script language="javascript" src="{% static "scripts/opacity.js" %}" type="text/javascript"></script>
+        
+        <!-- slider js support-->
+        <script src="{% static "scripts/jquery-1.11.1.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "scripts/easyCarousel-min.js" %}"></script>
+		<script type="text/javascript">
+        $(document).ready(function() {
+            $("#myC").easyCarousel({
+                height: 400,            // height of the scrolling area, default is 250px
+                width: 650,             // width of scrolling area, default is 600px
+                autoScroll: true,       // do you want to start the scrolling by itself, default is true
+				slideDuration: 3000,    // time interval of photo slide
+                photoFrame: true        // add a frame to your photos used in slider, default is true
+            });
+        });
+</script>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "ec4fa72c-3b84-4872-bdb2-9cc24650c301", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+</head>
+
+<body>
+<div id="container">
+
+	<div id="top_content">
+    <div id="logo"><a href="index.html"><img src="{% static "images/logo.gif" %}" width="292" height="106" border="0" alt="" title="" /></a></div>
+    
+    <div id="menu">
+    <ul>
+    
+        <li class="home_current">
+        <a href="/index/">
+             <script language="javascript" type="text/javascript">
+            od_displayImage('myImg1', '{% static "images/home" %}', 80, 99, '', 'Variable Opacity Rules');
+            </script> 
+        </a>
+        </li>
+    
+        <li class="about">
+        <a href="/about/">
+             <script language="javascript" type="text/javascript">
+            od_displayImage('myImg1', '{% static "images/about" %}', 111, 103, '', 'Variable Opacity Rules');
+            </script> 
+        </a>
+        </li>
+        <li class="products">
+        <a href="/product/">
+             <script language="javascript" type="text/javascript">
+            od_displayImage('myImg1', '{% static "images/products" %}', 129, 86, '', 'Variable Opacity Rules');
+            </script> 
+        </a>
+        </li>
+        <li class="contact">
+        <a href="/contact/">
+             <script language="javascript" type="text/javascript">
+            od_displayImage('myImg1', '{% static "images/contact" %}', 103, 79, '', 'Variable Opacity Rules');
+            </script> 
+        </a>
+        </li>
+    
+    
+    </ul>
+    </div>
+    	<div id="middle_content">
+                <div id="intro_text">
+                	<div style="width:300px; padding:65px 0 0 40px;">
+                <h2>Welcome</h2>
+                <p>
+                "Hi there, Welcome to New Bright Nails' website. We are located at <b>1519 Black Rock Tpke, Fairfield, CT 06825</b>. New Bright Nails values our customers, and we put our customers experience in front of anything. Here, you can enjoy the professional medicure service. We assure you will have a good memory after visiting us! </p>
+				
+                	</div>
+                </div>
+                
+                <div id="face"></div>
+        
+        </div>
+    
+    </div>
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+	<div id="down_content">
+    
+    	<!-- Carousal effect area: add picture 1,2,7,8 in images/newbright/ -->
+        <div id="slider">
+            <ul id="myC">
+                <li><img src="{% static "images/newbright/1.jpg" %}"></li>
+                <li><img src="{% static "images/newbright/2.jpg" %}"></li>
+                <li><img src="{% static "images/newbright/7.jpg" %}"></li>
+                <li><img src="{% static "images/newbright/8.jpg" %}"></li>         
+            </ul>
+        </div>
+		<div style="text-align:center;">
+<span class='st_sharethis' displayText='ShareThis'></span>
+<span class='st_facebook' displayText='Facebook'></span>
+<span class='st_twitter' displayText='Tweet'></span>
+<span class='st_tumblr' displayText='Tumblr'></span>
+<span class='st_googleplus' displayText='Google +'></span>
+<span class='st_linkedin' displayText='LinkedIn'></span>
+<span class='st_pinterest' displayText='Pinterest'></span>
+<span class='st_email' displayText='Email'></span>
+</div>
+		
+        </div>        
+   
+        
+        
+    
+    <div id="footer">
+    <div class="copyright">I <img src="{% static "images/love.gif" %}" width="19" height="23" border="0" alt="" title="" /> <a>New Bright</a></div>
+    <br />
+    New Bright Nails. All Rights Reserved 2014 <br />
+    <img src="{% static "images/footer.gif" %}" width="85" height="32" border="0" alt="" title="" /><br />
+    
+    </div>
+    
+    </div>
+
+</div>
+
+
+</body>
+    
+</html>

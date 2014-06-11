@@ -1,0 +1,124 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Beauty Co. Template</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}" media="screen" />
+	<script language="javascript" src="{% static "scripts/browserdetect_lite.js" %}" type="text/javascript"></script>
+	<script language="javascript" src="{% static "scripts/opacity.js" %}" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="container">
+
+	<div id="top_content">
+    <div id="logo"><a href="index.html"><img src="{% static "images/logo.gif" %}" width="292" height="106" border="0" alt="" title="" /></a></div>
+    
+    <div id="menu">
+    <ul>
+    
+        <li class="home">
+        <a href="/index/">
+             <script language="javascript" type="text/javascript">
+            od_displayImage('myImg1', '{% static "images/home" %}', 80, 99, '', 'Variable Opacity Rules');
+            </script> 
+        </a>
+        </li>
+    
+        <li class="about_current">
+        <a href="/about/">
+             <script language="javascript" type="text/javascript">
+            od_displayImage('myImg1', '{% static "images/about" %}', 111, 103, '', 'Variable Opacity Rules');
+            </script> 
+        </a>
+        </li>
+        <li class="products">
+        <a href="/product/">
+             <script language="javascript" type="text/javascript">
+            od_displayImage('myImg1', '{% static "images/products" %}', 129, 86, '', 'Variable Opacity Rules');
+            </script> 
+        </a>
+        </li>
+        <li class="contact">
+        <a href="/contact/">
+             <script language="javascript" type="text/javascript">
+            od_displayImage('myImg1', '{% static "images/contact" %}', 103, 79, '', 'Variable Opacity Rules');
+            </script> 
+        </a>
+        </li>
+    
+    
+    </ul>
+    </div>
+    	<div id="middle_content">
+                <div id="intro_text">
+                	<div style="width:300px; padding:65px 0 0 40px;">
+                <h2>About Us</h2>
+                <p>
+                "We have been in business for over ten years before opening up New Bright Nails in Fairfield, CT. As we have been always trying to do, we promise our customers with unforgettable experience. Every nail we touch, we have done it right! " </p>
+                	</div>
+                </div>
+                
+                <div id="face"></div>
+        
+        </div>
+    
+    </div>
+
+
+	<div id="down_content">
+
+    	<h1>Who we are ?</h1>
+        
+        <div class="prod_box">
+        	 <div class="prod_descr">
+			<img src="{% static "images/about.jpg" %}" width="110" height="73" alt="" title="" class="left" />
+            <p>" We are professional medicure shop located at Fairfield CT. For many years, we have provided best in class service for our customers. We guarantee that our customers will leave our door with satisfaction. Please share us on your social network. Thanks! "</p>
+            </div>
+            
+            
+        </div>
+
+  
+    	
+        
+        <div class="prod_box">
+        	<h4>Our main services</h4>
+        	<div class="prod_descr">
+				<ul>
+                <li class="current"><a href="#">Lorem ipsum dolor sit amet, consectetur dolor in</a></li>
+                <li><a href="#">Duis aute irure dolor in reprehenderit in irure dolor in </a></li>
+                <li><a href="#">Eiusmod tempor incididunt ut eiusmod tempor </a></li>
+                <li><a href="#">Duis aute irure dolor in reprehenderit dolor in eiusmod </a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet irure dolor in reprehenderit</a></li>
+                <li><a href="#">Duis aute irure dolor in reprehenderit in dolor in</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                
+                </ul>
+            </div>
+            
+            
+        </div>
+        
+        
+       
+        
+        
+        
+    
+    <div id="footer">
+    <div class="copyright">I <img src="{% static "images/love.gif" %}" width="19" height="23" border="0" alt="" title="" /> <a>New Bright</a></div>
+    <br />
+    New Bright Nails. All Rights Reserved 2014 <br />
+    <img src="{% static "images/footer.gif" %}" width="85" height="32" border="0" alt="" title="" /><br />
+    
+    </div>
+    
+    </div>
+
+</div>
+</body>
+</html>
